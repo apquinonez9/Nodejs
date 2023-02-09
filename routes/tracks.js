@@ -1,8 +1,7 @@
 const express = require("express");
 const router = express.Router();
-router.get("/", (req, res) => {
+const { getItems, getItem } = require("../controllers/tracks");
 
-    const data = ["hola", "mundo"]
-    res.send({ data })
-})
-module.exports = router
+router.get("/", getItems);
+router.get("/:id", getItem);
+module.exports = router;
