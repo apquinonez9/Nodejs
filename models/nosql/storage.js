@@ -1,4 +1,4 @@
-const mongoose = requi("mongoose")
+const mongoose = require("mongoose")
 const StorageScheme = new mongoose.Schema({
     url: {
         type: String,

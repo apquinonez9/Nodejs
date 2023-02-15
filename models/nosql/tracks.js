@@ -1,4 +1,4 @@
-const mongoose = requi("mongoose")
+const mongoose = require("mongoose")
 const TracksScheme = new mongoose.Schema({
     name: {
         type: String,
